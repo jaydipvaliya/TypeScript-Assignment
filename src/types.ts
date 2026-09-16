@@ -1,4 +1,3 @@
-// src/types.ts
 
 export type ID = number;
 
@@ -114,6 +113,6 @@ export type BillResult =
       message: string;
     };
 
-function assertNever(value: never): never {
+export function assertNever(value: never): never {
   throw new Error(`Unhandled value: ${String(value)}`);
 }
